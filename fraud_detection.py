@@ -52,8 +52,6 @@ print(balance_df1['isFraud'].value_counts())
 balanced_df = pd.concat([balance_df0, balance_df1], axis=0)
 print(balanced_df['isFraud'].value_counts())
 balanced_df = shuffle(balanced_df)  # random arrangement of 0 and 1
-balanced_df = pd.concat([balance_df0, balance_df1], axis=0)
-print(balanced_df['isFraud'].value_counts())
 print(balanced_df.head(200))
 
 
